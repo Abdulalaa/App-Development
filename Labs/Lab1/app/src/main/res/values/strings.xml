@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Cube Root It!</string>
+    <string name="edit_infile">Enter File Name</string>
+    <string name="edit_outfile">Enter Output File Name</string>
+    <string name="button_calculate">Process File</string>
+    <string name="cube_root_results">Cube Root Results: </string>
+</resources>
