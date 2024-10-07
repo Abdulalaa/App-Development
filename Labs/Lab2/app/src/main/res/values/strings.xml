@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Lab2</string>
+    <string name="input_url">Enter URL</string>
+    <string name="my_button">Display Watches</string>
+    <string name="display_watches">Watch Data:</string>
+
+</resources>

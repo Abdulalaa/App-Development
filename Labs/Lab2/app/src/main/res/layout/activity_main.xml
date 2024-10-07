@@ -5,7 +5,6 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
     tools:context=".MainActivity">
 
     <androidx.appcompat.widget.Toolbar
@@ -14,40 +13,41 @@
         android:layout_height="?attr/actionBarSize"
         android:background="?attr/colorPrimary"
         android:elevation="4dp"
-        app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
-        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>
+        app:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
 
-    <EditText android:id="@+id/edit_infile"
+    <EditText
+        android:id="@+id/input_url"
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:hint="@string/edit_infile" />
+        android:hint="@string/input_url" />
 
-    <EditText android:id="@+id/edit_outfile"
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:hint="@string/edit_outfile" />
-
-    <Button android:id="@+id/button_calculate"
+    <Button
+        android:id="@+id/my_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
         android:onClick="processPress"
-        android:text="@string/button_calculate" />
+        android:text="@string/my_button" />
 
-<!-- Horizontal spacer for style -->
+    <!-- Horizontal Space for aesthetic purposes -->
 
-    <Space android:layout_width="match_parent"
-        android:layout_height="20dp" />
+    <Space
+        android:id="@+id/spacer"
+        android:layout_width="10dp"
+        android:layout_height="match_parent" />
 
-    <View android:layout_width="fill_parent"
-        android:layout_height="3dp"
-        android:background="#800080" />
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="#808080" />
 
-    <Space android:layout_width="match_parent"
-        android:layout_height="20dp" />
+    <Space
+        android:id="@+id/spacer"
+        android:layout_width="10dp"
+        android:layout_height="match_parent" />
 
-<!-- Make TextView scrollable -->
-
+    <!-- Make TextView scrollable -->
     <ScrollView
         android:id="@+id/Scroller_ID"
         android:layout_width="match_parent"
@@ -55,10 +55,11 @@
         android:scrollbars="vertical"
         android:fillViewport="true" >
 
-        <TextView android:id="@+id/cube_root_results"
+        <TextView
+            android:id="@+id/output_results"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/cube_root_results" />
+            android:text="@string/display_watches" />
     </ScrollView>
 
 </LinearLayout>

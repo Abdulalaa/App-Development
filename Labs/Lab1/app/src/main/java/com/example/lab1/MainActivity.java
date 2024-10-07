@@ -13,9 +13,11 @@ import android.widget.Button;
 import android.widget.ScrollView;
 import android.content.res.AssetManager;
 import androidx.core.view.WindowInsetsCompat;
+import androidx.appcompat.widget.Toolbar;
 
 import java.util.*; //Scanner, ArrayList, List
 import java.io.*; //IOException, input/output
+import java.text.*; //DecimalFormat
 
 public class MainActivity extends AppCompatActivity {
 
@@ -29,6 +31,8 @@ public class MainActivity extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
+        Toolbar myToolbar = (Toolbar) findViewById(R.id.my_toolbar);
+        setSupportActionBar(myToolbar);
     }
 
     public void processPress(View view) throws java.io.IOException {
@@ -40,11 +44,11 @@ public class MainActivity extends AppCompatActivity {
         AssetManager assetManager = getAssets();
         Scanner fsc = new Scanner(assetManager.open(fileName.getText().toString().trim()));
 
-        // Initialize TextView to display results
-        TextView results = (TextView) findViewById(R.id.cube_root_results);
-
         // Initialize list to store/manipulate results
         ArrayList<Double> resultsList = new ArrayList<Double>();
+
+        // Initialize TextView to display results
+        TextView results = (TextView) findViewById(R.id.cube_root_results);
 
         // While loop to read input/add to list
         while (fsc.hasNextDouble()) {
@@ -65,7 +69,7 @@ public class MainActivity extends AppCompatActivity {
 
         // Loop through and display results
         results.setText("Cube Root Results: \n");
-        for (int i = 0; i < resultsList.size(); i++) {
+        for (int i = 0, n = resultsList.size(); i < n; i++) {
             results.append(resultsList.get(i) + "\n");
         }
 
@@ -76,23 +80,23 @@ public class MainActivity extends AppCompatActivity {
         PrintWriter pw = new PrintWriter(bw);
 
         // If file already exists, notify user
-        results.append("\n Appending values to file...\n");
+        results.append("\nAppending values to output file...\n");
         if (outfile.exists())
-            results.append("File already exists, updating...");
+            results.append("File already exists, clearing and updating...\n");
 
-        // Loop through cube root array and write to file
+        // Loop through cube root array and write to file, only three decimal places
+        DecimalFormat df = new DecimalFormat("0.000"); // Ensure three decimal places
         for (int i = 0; i < resultsList.size(); i++) {
-
-            pw.println(resultsList.get(i));
+            pw.println(df.format(resultsList.get(i))); // Format the double directly
         }
         pw.close();
     } // End of processPress
 
     public void cube_root_it(ArrayList<Double> list, int size) {
-
         // Loop through and cube root each element
         for (int i = 0; i < size; i++) {
             list.set(i, Math.cbrt(list.get(i)));
+
         }
         return;
     } // End of cube_root_it
