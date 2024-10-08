@@ -5,6 +5,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".MainActivity">
 
     <androidx.appcompat.widget.Toolbar
@@ -13,7 +14,7 @@
         android:layout_height="?attr/actionBarSize"
         android:background="?attr/colorPrimary"
         android:elevation="4dp"
-        app:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
         app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
 
     <EditText
@@ -34,8 +35,8 @@
 
     <Space
         android:id="@+id/spacer"
-        android:layout_width="10dp"
-        android:layout_height="match_parent" />
+        android:layout_width="match_parent"
+        android:layout_height="20dp" />
 
     <View
         android:layout_width="fill_parent"
@@ -44,8 +45,8 @@
 
     <Space
         android:id="@+id/spacer"
-        android:layout_width="10dp"
-        android:layout_height="match_parent" />
+        android:layout_width="match_parent"
+        android:layout_height="20dp" />
 
     <!-- Make TextView scrollable -->
     <ScrollView

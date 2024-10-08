@@ -16,6 +16,7 @@ public class Watch {
         this.powerSource = powerSource;
         this.waterResistance = waterResistance;
         this.bandContent = bandContent;
+        this.price = price;
     }
 
     // Getters and Setters for all fields
