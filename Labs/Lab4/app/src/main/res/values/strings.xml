@@ -1,3 +1,6 @@
 <resources>
     <string name="app_name">Lab4</string>
+    <string name="url_input">Enter URL</string>
+    <string name="process_image">Process Image</string>
+    <string name="display_text">Enter URL and Press Button to Process Image</string>
 </resources>
