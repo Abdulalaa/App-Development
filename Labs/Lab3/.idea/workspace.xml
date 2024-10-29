@@ -12,10 +12,15 @@
       </layout>
       <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml">
         <config>
-          <theme>@style/Theme.Lab3</theme>
+          <theme>@style/Theme.ListLab.NoActionBar</theme>
         </config>
       </layout>
       <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/activity_remove_item.xml">
+        <config>
+          <theme>@style/Theme.ListLab.NoActionBar</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/menu/menu_main.xml">
         <config>
           <theme>@style/Theme.ListLab.NoActionBar</theme>
         </config>
@@ -26,7 +31,27 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="da58fee8-d38a-42ff-9e1b-e17ddf5f8403" name="Changes" comment="" />
+    <list default="true" id="da58fee8-d38a-42ff-9e1b-e17ddf5f8403" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../EssexCarEmporium/app/MyApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../EssexCarEmporium/app/src/main/assets/Car.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../EssexCarEmporium/app/src/main/java/com/example/essexcaremporium/AssetsActivity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../EssexCarEmporium/app/src/main/java/com/example/essexcaremporium/Car.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../EssexCarEmporium/app/src/main/java/com/example/essexcaremporium/CarList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../EssexCarEmporium/app/src/main/java/com/example/essexcaremporium/DeleteCarActivity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../EssexCarEmporium/app/src/main/java/com/example/essexcaremporium/FindMakeActivity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../EssexCarEmporium/app/src/main/java/com/example/essexcaremporium/MyApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../EssexCarEmporium/app/src/main/java/com/example/essexcaremporium/SearchCarActivity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../EssexCarEmporium/app/src/main/java/com/example/essexcaremporium/WebActivity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../EssexCarEmporium/app/src/main/res/layout/activity_assets.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../EssexCarEmporium/app/src/main/res/layout/activity_delete_car.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../EssexCarEmporium/app/src/main/res/layout/activity_find_make.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../EssexCarEmporium/app/src/main/res/layout/activity_search.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../EssexCarEmporium/app/src/main/res/layout/activity_web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../EssexCarEmporium/app/src/main/res/menu/menu_main.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/caches/deviceStreaming.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/deviceStreaming.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -35,7 +60,7 @@
   <component name="ClangdSettings">
     <option name="formatViaClangd" value="false" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[DeviceId(pluginId=LocalEmulator, isTemplate=false, identifier=path=/Users/abdallah/.android/avd/Pixel_6_API_30.avd)]" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[DeviceId(pluginId=Default, isTemplate=false, identifier=serial=emulator-5554;connection=23106491)]" />
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />

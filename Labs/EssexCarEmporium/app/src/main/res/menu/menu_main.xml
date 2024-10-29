@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MainActivity">
+
+    <!-- Option 1: Display list (Shows up in the action bar if there's space) -->
+    <item
+        android:id="@+id/action_display_list"
+        android:onClick="onOption1"
+        app:showAsAction="ifRoom|withText"
+        android:title="@string/display_list"/>
+
+    <!-- Option 2: Load list from web file (Appears in overflow menu) -->
+    <item
+        android:id="@+id/action_load_from_web"
+        android:onClick="onOption2"
+        app:showAsAction="never"
+        android:title="@string/load_from_web"/>
+
+    <!-- Option 3: Add a new car (Appears in overflow menu) -->
+    <item
+        android:id="@+id/action_add_new_car"
+        android:onClick="onOption3"
+        app:showAsAction="never"
+        android:title="@string/add_new_car"/>
+
+    <!-- Option 4: Show car details (Appears in overflow menu) -->
+    <item
+        android:id="@+id/action_show_car_details"
+        android:onClick="onOption4"
+        app:showAsAction="never"
+        android:title="@string/show_car_details"/>
+
+    <!-- Option 5: Delete a car (Appears in overflow menu) -->
+    <item
+        android:id="@+id/action_delete_car"
+        android:onClick="onOption5"
+        app:showAsAction="never"
+        android:title="@string/delete_car"/>
+
+    <!-- Option 6: Show average price (Shows up in the action bar if there's space) -->
+    <item
+        android:id="@+id/action_show_avg_price"
+        android:onClick="onOption6"
+        app:showAsAction="ifRoom|withText"
+        android:title="@string/show_avg_price"/>
+
+    <!-- Option 7: Show average MPG (Shows up in the action bar if there's space) -->
+    <item
+        android:id="@+id/action_show_avg_mpg"
+        android:onClick="onOption7"
+        app:showAsAction="ifRoom|withText"
+        android:title="@string/show_avg_mpg"/>
+
+    <!-- Option 8: Show cars by make (Appears in overflow menu) -->
+    <item
+        android:id="@+id/action_show_by_make"
+        android:onClick="onOption8"
+        app:showAsAction="never"
+        android:title="@string/show_by_make"/>
+
+</menu>

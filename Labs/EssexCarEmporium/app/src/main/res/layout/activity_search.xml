@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".SearchCarActivity">
+
+    <!-- Input field for VIN -->
+    <EditText
+        android:id="@+id/edit_vin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter car VIN"
+        android:textSize="16sp"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Button to search for car details -->
+    <Button
+        android:id="@+id/search_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="searchCarByVin"
+        android:text="Search Car"
+        android:layout_gravity="center"
+        android:layout_marginBottom="16dp" />
+
+    <!-- TextView to display car details -->
+    <TextView
+        android:id="@+id/text_car_details"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:layout_marginBottom="16dp" />
+
+    <!-- SimpleDraweeView for displaying car image -->
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/car_image"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        app:actualImageScaleType="fitCenter" />
+
+    <!-- CoordinatorLayout for Snackbar -->
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:id="@+id/myCoordinatorLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

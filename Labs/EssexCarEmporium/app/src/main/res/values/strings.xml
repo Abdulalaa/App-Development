@@ -1,0 +1,49 @@
+<resources>
+    <string name="app_name">EssexCarEmporium</string>
+    <string name="text_main">Welcome to EssexCarEmporium!</string>
+
+    <!-- Menu Options -->
+    <string name="display_list">Display List</string>
+    <string name="load_from_web">Load from Web</string>
+    <string name="add_new_car">Add New Car</string>
+    <string name="show_car_details">Show Car Details</string>
+    <string name="delete_car">Delete Car</string>
+    <string name="show_avg_price">Show Average Price</string>
+    <string name="show_avg_mpg">Show Average MPG</string>
+    <string name="show_by_make">Show by Make</string>
+
+    <!-- AssetsActivity -->
+    <string name="edit_file_name">Enter asset file name</string>
+    <string name="load_car_from_assets">Load Car from Assets</string>
+    <string name="car_loaded_success">Car added successfully from assets file.</string>
+    <string name="loading_file_error">Error loading car data from the file.</string>
+    <string name="valid_file_name_prompt">Please enter a valid file name.</string>
+
+    <!-- DeleteCarActivity -->
+    <string name="delete_vin">Enter car VIN to delete</string>
+    <string name="delete_button">Delete Car</string>
+    <string name="car_deleted_success">Car successfully deleted.</string>
+    <string name="car_not_found_error">Car with the provided VIN not found.</string>
+    <string name="valid_vin_prompt">Please enter a valid VIN to delete.</string>
+
+    <!-- FindMakeActivity -->
+    <string name="edit_make">Enter car make</string>
+    <string name="search_by_make_button">Search by Make</string>
+    <string name="no_cars_found_for_make">No cars found for the make: </string>
+    <string name="filtered_cars_list">Cars matching the make: </string>
+
+    <!-- SearchCarActivity -->
+    <string name="edit_vin">Enter car VIN</string>
+    <string name="search_button">Search Car</string>
+    <string name="car_not_found">Car not found with the provided VIN.</string>
+    <string name="text_car_details">Car Details</string>
+    <string name="car_image_unavailable">Car image unavailable.</string>
+    <string name="invalid_vin_prompt">Please enter a valid VIN.</string>
+
+    <!-- WebActivity -->
+    <string name="edit_web_url">Enter URL</string>
+    <string name="load_cars_button">Load Cars from Web</string>
+    <string name="cars_loaded_success">Cars loaded successfully from web file.</string>
+    <string name="loading_error">Error loading car data from the provided URL.</string>
+    <string name="valid_url_prompt">Please enter a valid URL.</string>
+</resources>
