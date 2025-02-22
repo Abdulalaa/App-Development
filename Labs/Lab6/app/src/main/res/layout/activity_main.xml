@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id = "@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MainActivity">
+
+    <!-- Toolbar at the top -->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:title="Compound Interest"
+        android:titleTextColor="@android:color/white" />
+
+    <!-- Input for Principal -->
+    <EditText
+        android:id="@+id/getOriginalPrincipal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Principal Amount"
+        android:inputType="numberDecimal"
+        android:padding="8dp" />
+
+    <!-- Input for Years -->
+    <EditText
+        android:id="@+id/getYears"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Number of Years"
+        android:inputType="number"
+        android:padding="8dp" />
+
+    <!-- Input for Interest Rate -->
+    <EditText
+        android:id="@+id/getInterestRate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Interest Rate (e.g., 0.05)"
+        android:inputType="numberDecimal"
+        android:padding="8dp" />
+
+    <!-- Button to calculate -->
+    <Button
+        android:id="@+id/buttonCalculate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Calculate"
+        android:onClick="calculate"
+        android:layout_margin="8dp" />
+
+    <!-- TextView for displaying the result -->
+    <TextView
+        android:id="@+id/getResult"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Result will appear here"
+        android:textSize="16sp"
+        android:padding="8dp" />
+
+</LinearLayout>

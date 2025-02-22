@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".CommunicateActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/my_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:elevation="4dp"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>
+
+    <!-- Input fields for filename and operation -->
+    <EditText
+        android:id="@+id/edit_file"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter filename"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/edit_operation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter operation (e.g., esperanto)"
+        android:inputType="text" />
+
+    <!-- Button to send paragraph -->
+    <Button
+        android:id="@+id/button_send"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Send Paragraph"
+        android:onClick="sendParagraph" />
+
+    <!-- Spacer for visual separation -->
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="16dp" />
+
+    <!-- ScrollView for text display -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="vertical"
+        android:fillViewport="true">
+
+        <TextView
+            android:id="@+id/text_main"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Status messages will appear here"
+            android:textSize="16sp" />
+    </ScrollView>
+
+</LinearLayout>

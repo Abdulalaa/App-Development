@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Common Strings -->
+    <string name="app_name">Paragraph App</string>
+
+    <!-- CommunicateActivity Strings -->
+    <string name="edit_file">Enter filename</string>
+    <string name="edit_operation">Enter operation (e.g., esperanto)</string>
+    <string name="button_send">Send Paragraph</string>
+    <string name="text_main">Status messages will appear here</string>
+
+    <!-- MainActivity Strings -->
+    <string name="my_toolbar">Paragraph App</string>
+    <string name="edit_host">Enter Host</string>
+    <string name="edit_port">Enter Port</string>
+    <string name="button_connect">Connect to Server</string>
+</resources>
